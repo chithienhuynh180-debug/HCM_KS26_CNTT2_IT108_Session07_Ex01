@@ -1,0 +1,8 @@
+Câu 1.
+trong powerShell, cat là alias của get-content, nên nó in cả 500MB ra màn hình một lúc, terminal bị đơ.
+notepad nạp cả file vào RAM nên file lớn làm máy treo. Nên đọc theo luồng, mỗi lần chỉ đọc một phần nhỏ.
+Phần 2
+ 2. Xem từng trang:
+Get-Content server_log_500MB.log | more
+ 3. Xem 10 dòng cuối:
+Get-Content server_log_500MB.log -Tail 10
